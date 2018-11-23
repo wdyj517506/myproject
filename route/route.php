@@ -9,12 +9,7 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-Route::get('think', function () {
-    return 'hello,ThinkPHP5!';
-});
-
-Route::get('hello/:name', 'index/hello');
-
-return [
-
-];
+Route::rule('/', 'index/index/index');
+Route::rule('login', 'index/login/index');
+Route::rule('verify', 'index/login/verify');
+Route::rule('logout', 'index/login/logout');
