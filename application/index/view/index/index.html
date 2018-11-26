@@ -19,11 +19,12 @@
 <body>
 <div class="main">
 	<h1 class="layui-bg-red">用户注册</h1>
-	<form class="layui-form" action="insert">
+	<form class="layui-form" action="insert" method="post">
+	  <input type="hidden" name="create_time" value="{:time()}" />   
 	  <div class="layui-form-item">
 	    <label class="layui-form-label">用户名</label>
 	    <div class="layui-input-inline">
-	      <input type="text" name="title" required  lay-verify="required" placeholder="输入用户名" autocomplete="off" class="layui-input">
+	      <input type="text" name="username" required  lay-verify="required" placeholder="输入用户名" autocomplete="off" class="layui-input">
 	    </div>
 	    <div class="layui-form-mid layui-word-aux">用户名需大于六个字符</div>
 	  </div>
@@ -39,11 +40,11 @@
 	    <div class="layui-input-inline">
 	      <select name="city" lay-verify="required">
 	        <option value=""></option>
-	        <option value="0">北京</option>
-	        <option value="1">上海</option>
-	        <option value="2">广州</option>
-	        <option value="3">深圳</option>
-	        <option value="4">杭州</option>
+	        <option value="北京">北京</option>
+	        <option value="上海">上海</option>
+	        <option value="广州">广州</option>
+	        <option value="深圳">深圳</option>
+	        <option value="杭州">杭州</option>
 	      </select>
 	    </div>
 	    <div class="layui-form-mid layui-word-aux">仅限以下区域使用</div>

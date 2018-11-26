@@ -11,6 +11,6 @@
 
 Route::rule('/', 'index/index/index');
 Route::rule('insert', 'index/index/insert');
-Route::rule('login', 'index/login/index');
-Route::rule('verify', 'index/login/verify');
-Route::rule('logout', 'index/login/logout');
+
+//后台路由
+Route::rule('admin', 'admin/index/index');

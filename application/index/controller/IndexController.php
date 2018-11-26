@@ -2,6 +2,7 @@
 namespace app\index\controller;
 use app\common\model\User; 
 use think\Controller;
+use think\Request;			// 引用Request
 
 class IndexController extends Controller
 {
@@ -22,6 +23,23 @@ class IndexController extends Controller
     //插入数据
     public function insert()
     {
-    	return "This is 数据添加处理流程";
+        // 接收传入数据
+        $request = new Request( );
+        $postData = $request->post();       
+        // var_dump($postData);
+        // return ;    // 提前返回 
+        //实例化User对象
+        $User = new User();
+        $User->username = $postData['username'];
+        $User->password = md5($postData['password']);
+        $User->city = $postData['city'];
+        $like = implode(',', array_keys($postData['like']));
+        $User->lovely = $like;
+        $User->create_time = $postData['create_time'];
+        $User->update_time = $postData['create_time'];
+        $User->status = 0;
+
+        $User->save();
+        return  '新增成功。新增ID为:' . $User->id;
     }
 }
