@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-hover table-bordered">
+        <tr class="info">
+            <th>序号</th>
+            <th>用户名</th>
+            <th>密码</th>
+            <th>所属区域</th>
+            <th>兴趣爱好</th>
+            <th>账号状态</th>
+            <th>最近登录</th>
+            <th>创建时间</th>
+            <th>更新时间</th>
+        </tr>
+        {volist name="user" id="user" key="key"}
+        <tr>
+            <td>{$key}</td>
+            <td>{$user->getData('username')}</td>
+            <td>{$user->getData('password')}</td>
+            <td>{$user->getData('city')}</td>
+            <td>{$user->getData('lovely')}</td>
+            <td>{eq name='user->getData("status")' value='0'}未激活{else /}已激活{/eq}</td>
+            <td>0</td>
+            <td>{$user->getData('create_time')}</td>
+            <td>{$user->getData('update_time')}</td>
+        </tr>
+    		{/volist}
+        </table>
+    </div>
+</div>

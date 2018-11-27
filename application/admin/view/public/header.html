@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>管理员系统</title>
+    <link rel="stylesheet" type="text/css" href="./static/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="./static/bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./static/bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+    	.navbar {
+    		margin-bottom: 0px;
+    	}
+    	.xian {
+    		height: 20px;
+    		width: 100%;
+    		background-color: #012345;
+    	}
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/admin">后台管理系统</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/admin">系统首页 <span class="sr-only">(current)</span></a></li>
+        <li><a href="/admin_list">系统 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">核心</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户管理 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">权限管理</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">管理员分类</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">管理员列表</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">会员分类</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">会员列表</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="内容搜索">
+        </div>
+        <button type="submit" class="btn btn-default">提交</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="xian"></div>
