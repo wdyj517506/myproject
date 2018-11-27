@@ -11,4 +11,20 @@ class ListController extends Controller
 	{
 		return $this->fetch();
 	}
+
+    /**
+    *添加文章分类
+    **/
+    public function add_stro()
+    {
+         return $this->fetch();
+    }
+
+    /**
+    *添加文章
+    **/
+    public function add()
+    {
+         return $this->fetch();
+    }
 }

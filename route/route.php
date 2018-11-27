@@ -17,6 +17,8 @@ Route::rule('admin', 'admin/index/index');
 Route::rule('adminuser', 'admin/index/user');
 Route::rule('admin_info', 'admin/index/info');
 Route::rule('admin_list', 'admin/list/index');
+Route::rule('admin_list_add', 'admin/list/add');
+Route::rule('admin_list_add_stro', 'admin/list/add_stro');
 
 //后台数据处理路由
 Route::rule('admin_insert', 'admin/insert/index');
