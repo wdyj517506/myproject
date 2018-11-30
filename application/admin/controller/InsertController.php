@@ -27,5 +27,11 @@ class InsertController
                 return "系统基本参数数据保存成功！";
 	}
 
-
+        public function sort()
+        {
+                $request = new Request( );
+                $postData = $request->post();
+                var_dump($postData);
+                return ;    // 提前返回   
+        }
 }

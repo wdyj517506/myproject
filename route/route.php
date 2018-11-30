@@ -22,3 +22,7 @@ Route::rule('admin_list_add_stro', 'admin/list/add_stro');
 
 //后台数据处理路由
 Route::rule('admin_insert', 'admin/insert/index');
+Route::rule('admin_insert_stro', 'admin/insert/sort');
+
+//单张图片上传路由
+Route::rule('admin_image', 'admin/images/first');
